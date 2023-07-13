@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: #f1f3f6;
+}
+
+header {
+  background-color: #2874f0;
+  width: 100%;
+  height: 70px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.right-navbar a {
+  color: white;
+  /* margin-right: 95px; optional: add some margin to the right of the links */
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+.left-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore {
+  margin-left: 180px;
+  margin-bottom: 14px;
+}
+
+#searchbar {
+  margin: 10px;
+  width: 445px;
+  height: 38px;
+  padding-left: 15px;
+  background-image: url(/img/search\ icon.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 95% center;
+  margin-bottom: 25px;
+  border: none;
+  /* border-radius: 13px; */
+}
+
+.login-button {
+  background-color: white;
+  border: none;
+  color: #2874f0;
+  padding: 10px 20px;
+  /* border-radius: 5px; */
+  margin-left: 10px;
+  cursor: pointer;
+  width: 110px;
+  font-weight: bold;
+}
+
+.right-navbar {
+  display: flex;
+  margin-right: 150px;
+}
+
+.white-section {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 110px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.white-section a {
+  text-decoration: none;
+  color: black;
+  padding-top: 5px;
+  height: 30px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: small;
+}
+
+.white-section a img {
+  display: block;
+  height: 65px;
+  margin-bottom: 5px;
+}
+
+.backgroundimage {
+  background-image: url(/img/Leftheadphones.webp);
+  background-position: 0px bottom;
+  background-repeat: no-repeat;
+  height: 374px;
+  width: 280px;
+  background-color: white;
+}
+
+.itemsbox {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 0px 0px 10px;
+  overflow: hidden;
+}
+
+.allitems {
+  height: 390px;
+  /* border: solid black; */
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: white;
+}
+
+.beforeitembox {
+  /* border: solid red; */
+  width: 1030px;
+  display: flex;
+}
+
+.electronics {
+  word-wrap: break-word;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 110px;
+  margin-left: 60px;
+  display: flex;
+  white-space: pre;
+}
+
+.view {
+  background: #2874f0;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease;
+  vertical-align: super;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-left: 85px;
+  margin-top: 10px;
+}
+
+.itemsholder {
+  display: flex;
+}
+
+.refrigerator {
+  height: 374px;
+  width: 280px;
+}
+
+@media (max-width: 600px) {
+  .electronics {
+    white-space: normal;
+  }
+
+  .electronics br {
+    display: block;
+    content: " ";
+    margin-bottom: -0.5em;
+  }
+}
+
+.itemslist {
+  margin-left: 310px;
+  height: 374px;
+  margin-right: 280px;
+  /* border: solid 5px limegreen; */
+  width: 1024px;
+  display: flex;
+  margin-top: -240px;
+}
+
+.itemsholder {
+  width: 100%;
+  /* border: solid 4px #1700e9; */
+  display: flex;
+  margin-left: -35px;
+  overflow: hidden;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  height: 375px;
+  margin-top: -8px;
+}
+
+.itemsshelf {
+  width: 100%;
+  /* border: solid 4px #fdff00; */
+  overflow-x: hidden;
+  padding-bottom: 64px;
+  margin-bottom: -64px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+}
+
+.placeditems {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  transform: translateX(0px);
+}
+
+.items {
+  width: 232px;
+}
+
+.tab {
+  width: 100%;
+  height: 100%;
+}
+
+.tabimg {
+  height: 200px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.tabimgproperties {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -122px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+.price {
+  padding-top: 15px;
+  color: #388e3c;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+.description {
+  opacity: 0.6;
+  padding-top: 7px;
+  font-size: 14px;
+  margin-left: -20px;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
